@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Efilli Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efilli Test Projesi</title>
+    <style>
+        /* Basit bir stil dosyası - Sayfanın düzgün görünmesi için */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Erişilebilirlik için buton stili */
+        .btn {
+            display: inline-block;
+            background: #0056b3;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Efilli Test Sayfası</h1>
+
+    <header>
+        <div class="container">
+            <h1>Efilli Test</h1>
+            <nav aria-label="Ana Menü">
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Hizmetler</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Erişilebilirlik Testlerine Hoş Geldiniz</h2>
+            <p>Bu sayfa, Efilli tarama araçlarının yeteneklerini test etmek ve erişilebilirlik skorlarını analiz etmek amacıyla oluşturulmuş örnek bir landing page sayfasıdır.</p>
+            <a href="#" class="btn">Daha Fazla Bilgi</a>
+        </section>
+
+        <section>
+            <h3>Neden Erişilebilirlik?</h3>
+            <p>Web erişilebilirliği, engelli bireylerin web sitelerini herkesle eşit şartlarda kullanabilmesini sağlar. Doğru HTML yapısı (semantik etiketler), ekran okuyucuların sayfayı doğru yorumlaması için kritiktir.</p>
+            
+            <h3>Test Kapsamı</h3>
+            <ul>
+                <li>HTML Yapısal Kontrolü</li>
+                <li>Renk Kontrast Analizi</li>
+                <li>ARIA Etiketleri</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Efilli Test Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+
     <script src="https://beta-bundles.efilli.com/efilli.netlify.app.prod.js"></script>
-    
     <script src="https://a11y-bundles.efilli.com/efilli.netlify.app.js"></script>
+
 </body>
 </html>
